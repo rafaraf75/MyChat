@@ -1,0 +1,131 @@
+body{
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+    background-color: #343a40;
+}
+
+.container {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.card{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .title {
+    color: #dcdcdc;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.card button {
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+
+.search_form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    max-width: 600px;
+    width: 100%;
+}
+
+form.search_form input[type=text] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #6c757d;
+    color: #dcdcdc;
+    background-color: #495057;
+}
+
+form.search_form button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #6c757d;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+form.search_form button:hover {
+    background: #0056b3;
+}
+
+form.search_form::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar-nav li a {
+    font-size: 18px;
+    color: #fff;
+    margin-left: 15px;
+}
+
+.left-column, .right-column {
+    background-color: #343a40;
+    color: #fff;
+    height: 100%;
+    padding: 20px;
+}
+
+.content-column {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+
+.navbar .btn {
+    margin: 0 5px;
+}
+
+@media (max-width: 768px) {
+    .left-column, .right-column {
+        display: none;
+    }
+}
